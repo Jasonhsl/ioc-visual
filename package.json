@@ -1,6 +1,6 @@
 {
   "name": "ioc-visual",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "test ioc-visual package",
   "main": "index.js",
   "scripts": {

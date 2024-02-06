@@ -10,8 +10,8 @@ const loadHtCore = async (convertLibURL?: any) => {
   let htAuthKey = '/ht-auth/key.js'
   let htAuthBuckle = '/ht-auth/buckle.js'
   if (import.meta.env.DEV) {
-    htAuthKey = '/ht-auth-dev/key.js'
-    htAuthBuckle = '/ht-auth-dev/buckle.js'
+    htAuthKey = '/key.js'
+    htAuthBuckle = '/buckle.js'
   }
   const env = getConfig()
   let { baseURL, proxyPrefix, htLibBaseURL } = env
@@ -25,7 +25,7 @@ const loadHtCore = async (convertLibURL?: any) => {
   await loadJs('/ht/libs/core/ht.js', convertLibURL)
   await loadJs(htAuthBuckle, convertLibURL) // 在ht核心包之后加载buckle
   // await loadJs(libBaseURL + '/libs/plugin/ht-thermodynamic.js')
-  await loadJs('/ht/libs/plugin/ht-thermodynamic.js', convertLibURL)
+  // await loadJs('/ht/libs/plugin/ht-thermodynamic.js', convertLibURL)
 }
 
 export { loadHtCore }

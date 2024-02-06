@@ -8,7 +8,7 @@ const loadJs = (url: string, convertLibURL?: any) => {
 let init = false
 const loadHtPlugin = async (convertLibURL?: any) => {
   if (init) return
-  _loadJs('dataBinding/js/app.js')
+  // _loadJs('dataBinding/js/app.js')
 
   const htPlugins = [
     '/ht/libs/plugin/ht-animation.js',
@@ -24,8 +24,8 @@ const loadHtPlugin = async (convertLibURL?: any) => {
     '/ht/libs/plugin/ht-overview.js',
     '/ht/libs/plugin/ht-vector.js',
     '/ht/libs/plugin/ht-forcelayout.js',
-    '/ht/libs/plugin/heatmap2d.js',
-    '/ht/libs/plugin/heatmap3d.js',
+    // '/ht/libs/plugin/heatmap2d.js',
+    // '/ht/libs/plugin/heatmap3d.js',
     '/ht/custom/libs/echarts.js'
 
     // '/ht/libs/plugin/ht-dashflow.js',
